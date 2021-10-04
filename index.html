@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TressJS</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="#">
+</head>
+<body>
+    <header>
+        <h1>TressJS</h1>
+        <h5>Version 0.5 (Work In Progress)</h5>
+        <p>Tress for JavaScript</p>
+    </header>
+
+    <div id="FPNInDiv">
+        <input type="text" id="FPNIn"/>
+        <button type="button" id="SetFPN">Set New Position</button>
+    </div>
+
+    <div id="Scoresheet">
+        <div id="MoveList"></div>
+    </div>
+
+    <div id="Board">
+        
+    </div>
+
+    <div id="Sidebar">
+        <!-- <select id="vsMode">
+            <option value="1Pvs2P">Player 1 vs Player 2</option>
+            <option value="1PvsCPU">Player vs Computer</option>
+            <option value="CPUvsCPU">Computer vs Computer</option>
+            <option value="Free Play">Free Play</option>
+        </select>
+        <br/><br/>
+        <button type="button" id="SetPlayers">Set Players</button>
+        <br/><br/><br/><br/> -->
+    
+        <button type="button" id="NewGameAsWhite">New Game</button><br/><br/>
+        <!-- <button type="button" id="NewGameAsBlack">New Game as Black</button><br/><br/> -->
+        <!-- <button type="button" id="FlipBoard">Flip Board</button><br/><br/> -->
+        <button type="button" id="Takeback">Takeback</button><br/><br/>
+        <span id="GameOutcome"></span>
+        <input type="text" id="MoveIn"/><br/><br/>
+        <button type="button" id="EnterMove">Enter Move</button>
+    </div>
+
+    </br></br></br></br>
+
+    <div id="UnderBoard">
+        <div id="Position">
+            Current Position: <span id="fpnout"></span>
+        </div>
+        <div id="LastMove">
+            Last move: <span id="moveprint"></span>
+        </div>
+        <div id="Helptext"></div>
+        <div id="Result">
+            <p></p>
+        </div>
+    </div>
+
+    </br</br></br>
+
+    <article>
+        <h2>What is TressJS?</h2>
+        <p>Tress is a JavaScript based engine for playing Tress, an abstract strategy board game I created, inspired by Chess. I decided to make Tress into a browser game to test the game more easily, to make the game accessible to friends and family, and to improve my skills as a programmer and game designer.<br/>
+        <br/>
+        The object of Tress is to move your King and Queen (or Crown and Coronet) into the red zone in the center of the board, known as the Fortress, and to prevent your opponent from doing the same. At your disposal you have six Knights (or Swords), two Guardians (or Shields), and two Pikemen (or Spears), which you must use to control the board and safely escort your King and Queen to the Fortress. You should also be aware that if your Pikemen or Guardians can enter the Fortress uncontested by the enemy, they can promote to more powerful pieces! Pikemen can become Lancers, and Guardians can become the fearsome Sentinel, which can quickly dominate the board.
+        </p>
+        <h2>Current Feature List</h2>
+        <p>As of Version 0.5</p>
+        <li>Starting Position set automatically.</li>
+        <li>Set custom position in text field above using an FPN(Based on Forsyth-Edwards Notation).</li>
+        <li>Current Position appears in browser console.</li>
+        <li>Pieces appear on GUI</li>
+        <li>Make moves on GUI using mouse</li>
+        <li>Side to move displayed on GUI</li>
+        <li>Legal Move checking</li>
+        <li>Moves can be taken back</li>
+        <li>Placeholder Sound Effects</li>
+        <li>Move list appears on GUI</li>
+
+        <h2>Planned Updates</h2>
+        <li>Computer opponent</li>
+        <li>Full Win/Draw condition checking</li>
+    </article>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/sound.js"></script>
+    <script src="js/board.js"></script>
+    <script src="js/movegen.js"></script>
+    <script src="js/scort.js"></script>
+    <script src="js/gui.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,187 @@
+body {
+    background-color: black;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+article {
+    width: 70%;
+}
+
+h1 {
+    color: whitesmoke;
+    font-size: 50px;
+}
+
+h2 {
+    color: whitesmoke;
+}
+
+h4 {
+    color: aquamarine;
+}
+
+h5 {
+    color: grey;
+}
+
+p { 
+    color: whitesmoke;
+}
+
+li {
+    color: whitesmoke;
+}
+
+#FPNInDiv {
+    position: relative;
+    top: 20px;
+}
+
+#FPNIn {
+    width: 520px;
+}
+
+#Board {
+    position: relative;
+    top: 60px;
+    left: 0px;
+    width: 640px;
+    height: 640px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: grey;
+    /* background-image: url(images/brdtexture.png); */
+    background-color: whitesmoke;
+}
+
+#Scoresheet {
+    position: absolute;
+    left: 1100px;
+    top: 234px;
+    width: 200px;
+    height: 760px;
+    background-color: rgb(20, 20, 20);
+    color: whitesmoke;
+}
+
+#MoveList {
+    position: relative;
+    left: 15px;
+    top: 10px;
+}
+
+#Sidebar {
+    position: absolute;
+    left: 800px;
+    top: 400px;
+    width: 200px;
+}
+
+#UnderBoard {
+    width: 648px;
+    height: 50px;
+}
+
+#Position {
+    position: relative;
+    left: 10px;
+    top: 5px;
+}
+
+#LastMove {
+    position: relative;
+    left: 10px;
+    top: 8px;
+}
+
+#Result {
+    position: relative;
+    left: 10px;
+    top: 8px;
+}
+
+.Square {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    z-index: 1;
+}
+
+.Dark {
+    background-color: rgb(5, 5, 5);
+    opacity: 90%;
+}
+
+.Light {
+    background-color: rgb(220, 220, 220);
+    opacity: 60%;
+}
+
+.DarkBlue {
+    background-color: navy;
+    opacity: 80%;
+}
+
+.LightBlue {
+    background-color: blue;
+    opacity: 80%;
+}
+
+.DarkRed {
+    background-color: maroon;
+    opacity: 80%;
+}
+
+.LightRed {
+    background-color: red;
+    opacity: 80%;
+}
+
+.SqSelected {
+    background-color: orange;
+    opacity: 50%;
+}
+
+.SqHighlighted {
+    background-color: yellow;
+    opacity: 50%;
+}
+
+.rank1 { top: 560px; }
+.rank2 { top: 480px; }
+.rank3 { top: 400px; }
+.rank4 { top: 320px; }
+.rank5 { top: 240px; }
+.rank6 { top: 160px; }
+.rank7 { top: 80px; }
+.rank8 { top: 0px; }
+
+.file1 { left: 0px; }
+.file2 { left: 80px; }
+.file3 { left: 160px; }
+.file4 { left: 240px; }
+.file5 { left: 320px; }
+.file6 { left: 400px; }
+.file7 { left: 480px; }
+.file8 { left: 560px; }
+
+.Piece {
+    position: absolute;
+    z-index: 2;
+}
+
+.posWhite {
+    background-color: whitesmoke;
+    color: black;
+}
+
+.posBlack {
+    background-color: black;
+    color: whitesmoke;
+}
+
+.posBoth {
+    background-color: grey;
+    color: black;
+}
